@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(../images/background.png)
+            }
+           
+            @font-face{
+                font-family: Nunito;
+                src: url(../fonts/Nunito-Regular.ttf);
+            }
+            @font-face{
+                font-family: Monument;
+                src: url(../fonts/MonumentExtended-Ultrabold.otf);
+            }
+            @font-face{
+                font-family: Hatton;
+                src: url(../fonts/Hatton-Semibold.otf);
+            }
+            #remarks{
+                font-family: Hatton;
+                font-size: 60px;
+                color: white;
+                margin-top: 15px;
+                text-shadow: 2px 2px 0 black;
+            }
+            #score{
+                font-family: Monument;
+                font-size: 90px;
+                color: lightsalmon;
+                margin-top: 15px;
+                text-shadow: 2px 2px 0 white;
+            }
+            
+            #retry{
+                font-family: Nunito;
+                font-size: 25px;
+                text-align: center;
+                color: lightsalmon;
+                font-weight: bold;
+            }
+            #retry a{
+                color: lightsalmon;
+                text-decoration: none;
+            }
+            #retry a:hover{
+                color:darkgoldenrod;
+            }
+            .box{
+                border-width: 3px;
+                text-align: center;
+                position:relative;
+                top: 30px;
+                margin: 50 170px;
+                padding:20;
+                background-image: url(../images/1.png);
+            }
+            .question{
+                font-family: Nunito;
+                font-size: 25px;
+                color: black;
+                padding: 7px;
+                background-color: white;
+                border-style: solid;
+                border-color: lightsalmon;
+                border-width:2px;
+            }
+            #c1, #c2{
+                margin: 2% 30%;
+                padding: 7px;
+                font-size: 20px;
+                background-color: white;
+                border-style: solid;
+                border-color: lightsalmon;
+                border-width:2px;
+            }
+            #c1:hover{
+                background-color: lightsalmon !important;
+            }
+            #c2:hover{
+                background-color: lightsalmon !important;
+            }
+         
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="box" id="first">
+            <div class="question">
+                <p>Solve for the antiderivative of:</p> 
+                <img src="../images/SubstitutionQ1.png"></img>
+            </div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ1A.png"></img></div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ1B.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ1C.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ1D.png"></img></div>
+        </div>
+
+        <div class="box" id="second">
+            <div class="question">
+                <p>Evaluate the integral:</p>
+                <img src="../images/SubstitutionQ2.png"></img> 
+            </div>
+                <div id="c2" onclick="right()"><img src="../images/SubstitutionQ2A.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ2B.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ2C.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ2D.png"></img></div>
+        </div>
+
+        <div class="box" id="third">
+            <div class="question">
+                <p>Solve for the antiderivative of:</p> 
+                <img src="../images/SubstitutionQ3.png"></img>
+            </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ3A.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ3B.png"></img></div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ3C.png"></img></div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ3D.png"></img></div>
+        </div>
+
+        <div class="box" id="fourth">
+            <div class="question">
+                <p>Evaluate the integral:</p>
+                <img src="../images/SubstitutionQ4.png"></img> 
+            </div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ4A.png"></img></div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ4B.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ4C.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ4D.png"></img></div>
+        </div>
+
+        <div class="box" id="fifth">
+            <div class="question">
+                <p>Solve for the antiderivative of:</p> 
+                <img src="../images/SubstitutionQ5.png"></img> 
+            </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ5A.png"></img> </div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ5B.png"></img> </div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ5C.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ5D.png"></img> </div>
+        </div>
+
+        <div class="box" id="sixth">
+            <div class="question">
+                <p>Evaluate the integral:</p>
+                <img src="../images/SubstitutionQ6.png"></img> 
+            </div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ6A.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ6B.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ6C.png"></img> </div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ6D.png"></img> </div>
+        </div>
+
+        <div class="box" id="seventh">
+            <div class="question">
+                <p>Solve for the antiderivative of:</p> 
+                <img src="../images/SubstitutionQ7.png"></img> 
+            </div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ7A.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ7B.png"></img> </div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ7C.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ7D.png"></img> </div>
+        </div>
+
+        <div class="box" id="eighth">
+            <div class="question">
+                <p>Evaluate the integral:</p> 
+                <img src="../images/SubstitutionQ8.png"></img> 
+            </div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ8A.png"></img> </div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ8B.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ8C.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ8D.png"></img> </div>
+        </div>
+
+        <div class="box" id="nineth">
+            <div class="question">
+                <p>Solve for the antiderivative of:</p> 
+                <img src="../images/SubstitutionQ9.png"></img> 
+            </div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ9A.png"></img> </div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ9B.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ9C.png"></img> </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ9D.png"></img> </div>
+        </div>
+        <div class="box" id="tenth">
+            <div class="question">
+                <p>Evaluate the integral:</p> 
+                <img src="../images/SubstitutionQ10.png"></img> 
+            </div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ10A.png"></img></div>
+                <div id="c2" onclick="wrong()"><img src="../images/SubstitutionQ10B.png"></img></div>
+                <div id="c1" onclick="right()"><img src="../images/SubstitutionQ10C.png"></img></div>
+                <div id="c1" onclick="wrong()"><img src="../images/SubstitutionQ10D.png"></img></div>
+        </div>
+        <div class="box" id="result">
+            <p id="remarks"></p>
+            <p id="score"></p>
+            <div id="retry"><a href="../categories/substi.html">RETRY </a> |<a href="../index.html"> CHOOSE ANOTHER CATEGORY</a></div>
+            
+        </div>
+        
+        <script>
+            //initialized variables: score is set to zero because it is the value of the score when the game starts; counter is set to one because the quiz starts with the question no. one
+            var score = "0";
+            var counter = "1";
+            //this will hide other sets of question-choices while the first question-choices is active
+            document.getElementById("second").style.display = "none";
+            document.getElementById("third").style.display = "none";
+            document.getElementById("fourth").style.display = "none";
+            document.getElementById("fifth").style.display = "none";
+            document.getElementById("sixth").style.display = "none";
+            document.getElementById("seventh").style.display = "none";
+            document.getElementById("eighth").style.display = "none";
+            document.getElementById("nineth").style.display = "none";
+            document.getElementById("tenth").style.display = "none";
+            document.getElementById("result").style.display = "none";
+            //this will be called when the choice is right. It will add up 1 point to the initial score when clicked. The counter also increases one at a time.
+            function right(){
+                score++;
+                counter++;
+                next();
+            }
+            // this will be called when the choice is wrong. The counter will only increase by one at a time.
+            function wrong(){
+                counter++;
+                next();
+            }
+            //This function gets the value of counter. It changes the question-choices as the counter increases.
+            function next(){
+                //if the counter is equal to 2, the first question-choices will hide and the next one will show...the process goes on
+            if(counter==2){
+                document.getElementById("first").style.display = "none";
+                document.getElementById("second").style.display = "block";
+            }
+            else if(counter==3){
+                document.getElementById("second").style.display = "none";
+                document.getElementById("third").style.display = "block";
+            }
+            else if(counter==4){
+                document.getElementById("third").style.display = "none";
+                document.getElementById("fourth").style.display = "block";
+            }
+            else if(counter==5){
+                document.getElementById("fourth").style.display = "none";
+                document.getElementById("fifth").style.display = "block";
+            }
+            else if(counter==6){
+                document.getElementById("fifth").style.display = "none";
+                document.getElementById("sixth").style.display = "block";
+            }
+            else if(counter==7){
+                document.getElementById("sixth").style.display = "none";
+                document.getElementById("seventh").style.display = "block";
+            }
+            else if(counter==8){
+                document.getElementById("seventh").style.display = "none";
+                document.getElementById("eighth").style.display = "block";
+            }
+            else if(counter==9){
+                document.getElementById("eighth").style.display = "none";
+                document.getElementById("nineth").style.display = "block";
+            }
+            else if(counter==10){
+                document.getElementById("nineth").style.display = "none";
+                document.getElementById("tenth").style.display = "block";
+            }
+            else if(counter==11){
+                document.getElementById("tenth").style.display = "none";
+                document.getElementById("result").style.display = "block";
+                document.getElementById("score").innerHTML = score+"/10"; 
+                
+                //This sets the remarks. The value of the score will be called in here then the corresponding case will have the decision to be done.
+                switch (score){
+                    case 10: 
+                        document.getElementById("remarks").innerHTML = "Perfecto!";
+                        break;
+                        
+                    case 9: 
+                        document.getElementById("remarks").innerHTML = "Magnifico!";
+                        break;
+                        
+                    case 8: 
+                        document.getElementById("remarks").innerHTML = "Excellent!";
+                        break;
+                        
+                    case 7: 
+                        document.getElementById("remarks").innerHTML = "Good job!";
+                        break;
+                        
+                    case 6: 
+                        document.getElementById("remarks").innerHTML = "Nice try!";
+                        break;
+                        
+                    case 5: 
+                        document.getElementById("remarks").innerHTML = "You failed!";
+                        break;
+
+                    default: 
+                        document.getElementById("remarks").innerHTML = "Better luck next time.";
+                        break;
+                            }
+                }
+            }       
+        //When this file loads, the function next() will be called.
+        window.onload = next();
+        </script>     
+    </body>
+
+</html>

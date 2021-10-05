@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(images/background.png);
+            }
+            #title{
+                line-height: 0.05px;
+                margin-top: 50px;
+            }
+            @font-face{
+                font-family: Nunito;
+                src: url(fonts/Nunito-Regular.ttf);
+            }
+            @font-face{
+                font-family: Monument;
+                src: url(fonts/MonumentExtended-Ultrabold.otf);
+            }
+            @font-face{
+                font-family: Hatton;
+                src: url(fonts/Hatton-Semibold.otf);
+            }
+            h1{
+                color:goldenrod;
+                font-size: 50px;
+                font-family: Hatton;
+                letter-spacing: 2px;
+                text-shadow: 2px 2px 0 white;
+            }
+            h4{
+                color:#FFFFFF;
+                font-family: Nunito;
+                letter-spacing: 7px;
+                font-weight: bold;
+                
+            }
+            h5{
+                color: gold;
+                font-family: Nunito;
+                letter-spacing: 4px;
+                font-size: 10px;
+            }
+            #choices img{
+                height: 450px;
+                
+            }
+            #choices{
+                margin-top: 50px;
+                margin-left: 20px;
+            }
+            .flip-container {
+	            perspective: 1000px;
+                display: inline-block;
+                margin: 0 30px;
+            }
+	/* flip the pane when hovered */
+	       .flip-container:hover .flipper, .flip-container.hover .flipper {
+                transform: rotateY(180deg);
+	        }
+            .flip-container:hover #mid{
+                transform: rotateY(180deg);
+            }
+            .flip-container:hover .back{
+                transform: rotateY(180deg);
+            }
+            .flip-container, .front, .back {
+                width: 320px;
+                height: 400px;
+            }
+/* flip speed goes here */
+            .flipper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+            }
+
+/* hide back of pane during swap */
+            .front, .back {
+	            backface-visibility: hidden;
+	            position: absolute;
+                width: 100%;
+                height: 100%;
+	            
+            }
+
+/* front pane, placed above back */
+            .front {
+	           
+            }
+
+/* back, initially hidden pane */
+            .back {
+               background-color: black;
+               transform: rotateY(180deg);
+                color: goldenrod;
+                padding: 25px;
+                border: solid 0.5px goldenrod;
+            }
+            /*texts on back*/
+            .back a{
+                color: #FFFFFF;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: bold;
+                font-family: Nunito;
+                border: solid 2px goldenrod;
+                padding: 8px;
+                
+            }.back a:hover{
+                background-color: goldenrod;
+                color: black;
+            }
+            
+            .back h3{
+                font-family: Hatton;
+                font-size: 25px;
+                
+            }
+            .back p{
+                font-family: Nunito;
+                text-align: justify;
+                font-size: 17px;
+                color: white;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <center>
+        <div id="title">
+            <h1>inteGHORL</h1>
+            <h4>Techniques of Integration</h4>
+            <h5>by EDRIAN LIAO</h5>
+        </div>
+            
+        <div id="choices">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	    <div class="flipper">
+		<div class="front">
+			<img src="images/sub_int.png">
+		</div>
+		<div class="back">
+			<!-- back content -->
+            <h3>Substitution and Parts</h3>
+            <p>In calculus, integration by <b><i>substitution</i></b>, also known as u-substitution or change of variables, is a method for evaluating integrals and antiderivatives. It is the counterpart to the chain rule for differentiation, in fact, it can loosely be thought of as using the chain rule "backwards".</p><br>
+            <a href="categories/substi.html">Start Quiz</a>
+		</div>
+	    </div>
+        </div>
+ 
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	    <div class="flipper" id="mid">
+		<div class="front">
+			<img src="images/trig_int.png">
+		</div>
+		<div class="back">
+			<!-- back content -->
+            <h3>Trigonometric Integrals</h3>
+            <p>These integrals are called <b><i>trigonometric integrals</i></b>. They are an important part of the integration technique called trigonometric substitution, which is featured in Trigonometric Substitution. This technique allows us to convert algebraic expressions that we may not be able to integrate into expressions involving trigonometric functions, which we may be able to integrate using the techniques described in this section. </p><br>
+            <a href="categories/trigo.html">Start Quiz</a>
+		</div>
+	    </div>
+        </div>
+
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	    <div class="flipper">
+		<div class="front">
+			 <img src="images/ratio_int.png">
+		</div>
+		<div class="back">
+			<!-- back content -->
+            <h3>Partial Fractions</h3>
+            <p>This process of taking a rational expression and decomposing it into simpler rational expressions that we can add or subtract to get the original rational expression is called partial fraction decomposition. Many integrals involving rational expressions can be done if we first do <b><i>partial fractions</i></b> on the integrand.</p><br>
+            <a href="categories/ratio.html">Start Quiz</a>
+		</div>
+	    </div>
+        </div>
+        </div>
+        </center>
+    </body>
+    
+</html>

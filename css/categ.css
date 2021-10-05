@@ -1,0 +1,153 @@
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,code,small,strike,strong,sub,sup,b,u,i{
+            border:0;
+            font-size:100%;
+            font:inherit;
+            vertical-align:baseline;
+            margin:0;
+            padding:0;
+        } 
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+            display:block;
+        }
+        @font-face{
+            font-family: Star Jedi Logo Monoline;
+            src:url(fonts/Strjmono.ttf) format("ttf");
+        }
+        @font-face{
+            font-family: Star Jedi Outline;
+            src:url(fonts/Starjout.ttf) format("ttf");
+        }
+        body{
+            background-image:url(../images/background.png);
+            line-height:1;
+            font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+        } 
+        ol,ul{
+            list-style:none;
+        }
+        strong{
+            font-weight:700;
+        }
+        #frame{
+            max-width:60%;
+            width:auto;
+            height: auto;
+            border:1px solid #ccc;
+            background:black;
+            padding:24px;
+            padding-bottom: 48px !important;
+            margin:3px;
+            position: absolute;
+            top: 7%;
+            left: 20%;
+            right: 20%;
+            border: solid 0.5px #20b2aa;
+        }
+        .sbutton{
+            width: 70px;
+            height: 70px;
+            padding: 2px;
+            border-radius: 50px;
+            background:#20b2aa;
+            margin-bottom: 30px;
+        }
+        #replay{
+            text-align: center;
+            color: black;
+            font-family: 'Star Jedi Logo Monoline';
+            position: absolute;
+            top: 35%;
+            left: 5%;
+        }
+        #replay p{
+            padding-top: 27px;
+        }
+        #home p{
+            padding-top: 20px;
+        }
+        #home{
+            text-align: center;
+            color: black;
+            font-family: 'Nunito Regular';
+            font-weight: bold;
+            position: absolute;
+            top: 35%;
+            right: 5%;
+        }
+        h1{
+            font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: 'Star Jedi Logo Monoline';
+            color:#20b2aa;
+            text-align:center;
+            border-bottom:1px solid #20b2aa;
+            padding:0;
+            width:auto;
+            
+        }
+        h2{
+            font:italic 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;padding:0;text-align:center;
+            color:#20b2aa;
+            text-align: center;
+            padding: 0;
+            font: italic bold;
+            margin-top: 20px;
+            margin-bottom: -10;
+        }
+        p.pager{
+            padding-top: 10px;
+            margin:5px 0 5px; 
+            font:bold 1em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color:#20b2aa;
+            text-align: center;
+        }
+        img.question-image{
+            display:block;
+            max-width:250px;
+            margin:10px auto;
+            border:1px solid #ccc;
+            width:100%;
+            height:auto;
+            float: left;
+        }
+        #choice-block{
+            position: relative;
+            display:block;
+            list-style:none;
+            margin:0;
+            padding:0;
+            width: 50%;
+            margin-left: 25%;   
+        }
+        #submitbutton{
+            background:black;
+            width: 50%;
+        }
+        #explanation{
+            position: relative;
+            text-align: center;
+            margin:0 auto;
+            padding:20px;
+            padding-top: 12 !important;
+            padding-bottom: 10  px !important;
+            width: 70%;
+            line-height: 1.2em;
+            color: #20b2aa;
+        }
+        .choice-box{
+            display:block;
+            text-align:center;
+            margin:8px auto;
+            padding:10px 0;
+            border:1px solid #20b2aa;
+            cursor:pointer;
+            color: #20b2aa;
+            background: black;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .choice-box:hover{
+            border:1px solid #20b2aa !important;
+            background-color: #20b2aa !important;
+            color: black !important;
+        }
